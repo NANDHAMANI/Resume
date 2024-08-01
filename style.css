@@ -1,55 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.style{
+
+.style {
     font-family: "Open Sans", sans-serif;
 }
 
-
-.demo{
+.demo {
     background-color: #525659;
 }
 
-
-.demo1{
+.demo1 {
     font-family: "Open Sans", sans-serif;
     color: hsl(196, 91%, 50%);
     font-size: 38px;
     margin-top: 50px;
 }
 
-.demo2 li{
+.demo2 li {
     display: block;
     color: #ADE8FF;
 }
 
-.demo3{
+.demo3 {
     margin-left: 30px;
 }
 
-.demo4 li{
+.demo4 li {
     display: block;
-
 }
 
-.demo5{
+.demo5 {
     color: #6ED4FB;
 }
 
-.demo6{
+.demo6,
+.demo7 {
     border-left: 3px solid hsl(196, 91%, 50%);
-
-
 }
 
-.demo7{
-    border-left: 3px solid hsl(196, 91%, 50%);
-    
+.container-fluid {
+    padding: 0;
 }
 
+.progress {
+    height: 10px;
+}
 
+@media (max-width: 768px) {
+    .demo1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
 
+    .demo2 li,
+    .demo4 li {
+        font-size: 0.9rem;
+    }
 
+    .demo6,
+    .demo7 {
+        padding-left: 0.0rem;
+    }
 
+    .progress {
+        width: 100% !important;
+    }
 
+    .gap-2 {
+        gap: 0.5rem !important;
+    }
+
+    .ms-4 {
+        margin-left: 1rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 1rem !important;
+    }
+
+    .ms-5 {
+        margin-left: 1rem !important;
+    }
+
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+
+    .fs-4 {
+        font-size: 0.9rem !important;
+    }
+
+    .ps-3 {
+        padding-left: 0.5rem !important;
+    }
+
+    .rounded-circle {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .container {
+        padding: 0 !important;
+    }
+
+    .d-flex > .col-1 {
+        margin-left: 0.1rem !important;
+        
+    }
+
+    .bg-info {
+        padding: 0.1rem !important;
+        
+    }
+}
